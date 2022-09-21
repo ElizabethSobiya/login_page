@@ -38,8 +38,8 @@ const Register = () => {
 	};
 
 	return (
-		<div className={styles.signup_container}>
-			<div className={styles.signup_form_container}>
+		<div className={styles.register_container}>
+			<div className={styles.register_form_container}>
 				<div className={styles.left}>
 					<h1>Welcome Back</h1>
 					<Link to="/login">
