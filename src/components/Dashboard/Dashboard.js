@@ -1,6 +1,7 @@
 import styles from "./style.module.css";
+import { Link } from "react-router-dom";
 
-const Main = () => {
+const Dashboard = () => {
 	const handleLogout = () => {
 		localStorage.removeItem("token");
 		window.location.reload();
@@ -9,7 +10,9 @@ const Main = () => {
 	return (
 		<div className={styles.main_container}>
 			<nav className={styles.navbar}>
-				<h1>fakebook</h1>
+				<h1>DashBoard</h1>
+                <Link to="/profile"><h2>Profile</h2></Link>
+                <Link to="/project"> <h2>Projects</h2></Link>
 				<button className={styles.white_btn} onClick={handleLogout}>
 					Logout
 				</button>
@@ -18,4 +21,4 @@ const Main = () => {
 	);
 };
 
-export default Main;
+export default Dashboard;

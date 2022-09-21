@@ -6,10 +6,11 @@ import styles from "./style.module.css";
 const Register = () => {
 	const [data, setData] = useState({
 		firstName: "",
+        lastName: "",
 		email: "",
 		password: "",
         // confirmPassword: "",
-        // country: ""
+        country: ""
 	});
 	const [error, setError] = useState("");
 	const navigate = useNavigate();
@@ -59,6 +60,15 @@ const Register = () => {
 							required
 							className={styles.input}
 						/>
+                        <input
+							type="text"
+							placeholder="Last Name"
+							name="lastName"
+							onChange={handleChange}
+							value={data.lastName}
+							required
+							className={styles.input}
+						/>
 						
 						<input
 							type="email"
@@ -87,7 +97,7 @@ const Register = () => {
 							required
 							className={styles.input}
 						/> */}
-                        {/* <input
+                        <input
 							type="name"
 							placeholder="Country"
 							name="country"
@@ -95,7 +105,7 @@ const Register = () => {
 							value={data.country}
 							required
 							className={styles.input}
-						/> */}
+						/>
 						{error && <div className={styles.error_msg}>{error}</div>}
 						<button type="submit" className={styles.green_btn}>
 							Register
