@@ -1,12 +1,12 @@
 import styles from "./style.module.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
+	const navigate = useNavigate()
 	const handleLogout = () => {
 		localStorage.removeItem("token");
-		window.location.reload();
+		navigate('/');
 	};
-
 	return (
 		<div className={styles.main_container}>
 			<nav className={styles.navbar}>
