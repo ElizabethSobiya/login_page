@@ -23,19 +23,19 @@ function Projects() {
             <div className={styles.table_container}>
             <table>
             <tr>
-    <th>Company</th>
+    <th>Name</th>
+    <th>Email</th>
     <th>Contact</th>
-    <th>Country</th>
   </tr>
   <tr>
     <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
+    <td>alfreds@gail.com</td>
+    <td>254523648</td>
   </tr>
   <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
+    <td>Maria Anders</td>
+    <td>maria@gamil.com</td>
+    <td>554892148</td>
   </tr>
             </table>
             </div>
