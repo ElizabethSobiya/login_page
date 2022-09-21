@@ -1,12 +1,13 @@
 import React from 'react'
 import styles from "./style.module.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Projects() {
 
-    const handleLogout = () => {
+  const navigate = useNavigate()
+	const handleLogout = () => {
 		localStorage.removeItem("token");
-		window.location.reload();
+		navigate('/');
 	};
   return (
   <>
